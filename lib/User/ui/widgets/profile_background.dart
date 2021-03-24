@@ -19,7 +19,7 @@ class ProfileBackground extends StatelessWidget{
       child: Text(
         "Profile",
         style: TextStyle(
-          color: Colors.white,
+          color: Colors.blue,
 
         ),
       )

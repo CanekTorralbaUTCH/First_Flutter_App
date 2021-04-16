@@ -7,22 +7,32 @@ class ProfileBackground extends StatelessWidget{
     double screenHeight = MediaQuery.of(context).size.height;
     double screenWidth = MediaQuery.of(context).size.width;
     return Container(
-      width: screenWidth*0.50,
-      height: screenHeight*0.50,
-      margin: EdgeInsets.only(
-        top: screenHeight*0.10,
-        left: screenWidth*0.10,
-        bottom: screenHeight*0.10,
-        right: screenWidth*0.10,
+      width: screenWidth,
+      height: screenHeight*0.47,
+      decoration: BoxDecoration(
+          gradient: LinearGradient(
+              colors: [
+                Colors.blueAccent,
+                Colors.blueAccent[700]
+              ],
+            begin: FractionalOffset(0.2,0),
+            end: FractionalOffset(1.0,1.0),
+            stops: [0,0],
+            tileMode: TileMode.clamp
+          )
       ),
-      color: Colors.deepOrangeAccent,
-      child: Text(
-        "Profile",
-        style: TextStyle(
-          color: Colors.blue,
-
+      child: FittedBox(
+        fit: BoxFit.none,
+        alignment: Alignment(-2,-1),
+        child: Container(
+          width: screenWidth*1.5,
+          height: screenHeight*0.8,
+            decoration: BoxDecoration(
+              color: Colors.deepOrange,
+              borderRadius: BorderRadius.circular(screenHeight*0.5)
+            )
         ),
-      )
+      ),
     );
   }
 }

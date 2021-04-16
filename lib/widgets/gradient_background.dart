@@ -4,14 +4,15 @@ import 'package:flutter/cupertino.dart';
 class GradientBackground extends StatelessWidget{
 
   String title = "Willkommen";
+  double backgroundHeight;
 
-  GradientBackground(this.title);
+  GradientBackground(this.title, this.backgroundHeight);
 
   @override
   Widget build(BuildContext context) {
 
     final background = Container(
-      height: 360.0,
+      height: backgroundHeight,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [

@@ -19,7 +19,7 @@ class Home extends StatelessWidget{
             ReviewList()
           ],
         ),
-        GradientBackground("Willkommen"),
+        GradientBackground("Willkommen",300),
         CardImageList(),
       ],
     );

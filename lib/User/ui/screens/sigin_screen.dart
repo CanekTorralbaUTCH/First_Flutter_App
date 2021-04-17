@@ -60,6 +60,7 @@ class _SignInScreen extends State<SignInScreen>{
                   )
                 ),
                 GenericButton(buttonText: "Log in with Gmail", onPressed: (){
+                  userBloc.signOut();
                   userBloc.signIn();
                 },
                   width: null,

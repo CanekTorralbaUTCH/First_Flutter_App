@@ -1,4 +1,3 @@
-import 'package:flutter_app/User/repository/firebase_auth_api.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 import 'package:flutter_app/User/repository/auth_repository.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -12,6 +11,10 @@ class UserBloc implements Bloc{
 
   Future<FirebaseUser> signIn(){
     return _authRepository.signInFirebase();
+  }
+
+  signOut(){
+    _authRepository.signOut();
   }
 
   @override

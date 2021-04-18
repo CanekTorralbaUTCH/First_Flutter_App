@@ -83,9 +83,9 @@ class Review extends StatelessWidget{
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         userName,
+        userDetails,
         Row(
           children: [
-            userDetails,
             Star(Icons.star, topDistance),
             Star(Icons.star, topDistance),
             Star(Icons.star, topDistance),

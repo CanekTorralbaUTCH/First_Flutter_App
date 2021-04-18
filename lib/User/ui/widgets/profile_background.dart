@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ProfileBackground extends StatelessWidget{
@@ -9,6 +8,19 @@ class ProfileBackground extends StatelessWidget{
     return Container(
       width: screenWidth,
       height: screenHeight*0.47,
+
+      child: FittedBox(
+        fit: BoxFit.none,
+        alignment: Alignment(-2,-1),
+        child: Container(
+            width: screenWidth*1.5,
+            height: screenHeight*0.8,
+            decoration: BoxDecoration(
+                color: Color(0xFFFF5722),
+                borderRadius: BorderRadius.circular(screenHeight*0.5)
+            )
+        ),
+      ),
       decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [
@@ -20,18 +32,6 @@ class ProfileBackground extends StatelessWidget{
             stops: [0,0],
             tileMode: TileMode.clamp
           )
-      ),
-      child: FittedBox(
-        fit: BoxFit.none,
-        alignment: Alignment(-2,-1),
-        child: Container(
-          width: screenWidth*1.5,
-          height: screenHeight*0.8,
-            decoration: BoxDecoration(
-              color: Colors.deepOrange,
-              borderRadius: BorderRadius.circular(screenHeight*0.5)
-            )
-        ),
       ),
     );
   }

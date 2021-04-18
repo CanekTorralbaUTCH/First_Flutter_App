@@ -8,13 +8,13 @@ class Profile extends StatelessWidget{
   Widget build(BuildContext context) {
     return Stack(
       children: [
+        ProfileBackground(),
         ListView(
           children: [
             ProfilePLaceList()
           ],
         ),
-        ProfileBackground(),
-        ProfileHeader()
+        ProfileHeader(),
       ],
     );
   }

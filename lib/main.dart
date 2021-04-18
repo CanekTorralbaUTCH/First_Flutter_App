@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         child: MaterialApp(
             title: 'Flutter Demo',
             theme: ThemeData(
-              primarySwatch: Colors.green[600],
+              primarySwatch: Colors.green,
               visualDensity: VisualDensity.adaptivePlatformDensity,
             ),
             home: SignInScreen()//AppCupertino()
